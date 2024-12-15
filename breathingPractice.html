@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Blossom Salads</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="templates.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const script = document.createElement("script");
+        script.src = "script.js"; // Path to your script file
+        document.body.appendChild(script);
+
+        const templateContainer = document.getElementById("navHeader");
+        templateContainer.innerHTML = headerTemplate;
+        const footerContainer = document.getElementById("footerSection");
+        footerContainer.innerHTML = footerTemplate;
+      });
+    </script>
+  </head>
+
+  <body>
+    <header id="navHeader"></header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#featured-projects">Featured Projects</a></li>
+          <li><a href="#labs">Labs</a></li>
+          <li><a href="#more">More</a></li>
+        </ul>
+      </nav>
+      <div>
+        this can explain your feature projects you have done so far or any other
+        suggestions welcome
+      </div>
+    </main>
+
+    <footer id="footerSection"></footer>
+  </body>
+</html>

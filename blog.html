@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Blossom Salads</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="templates.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const script = document.createElement("script");
+        script.src = "script.js"; // Path to your script file
+        document.body.appendChild(script);
+
+        const templateContainer = document.getElementById("navHeader");
+        templateContainer.innerHTML = headerTemplate;
+
+        const footerContainer = document.getElementById("footerSection");
+        footerContainer.innerHTML = footerTemplate;
+      });
+    </script>
+  </head>
+
+  <body>
+    <header id="navHeader"></header>
+    <main>
+      <div>
+        Lets have a collapsible blogs under this section or can discuss on how
+        to achieve it here
+      </div>
+    </main>
+
+    <footer id="footerSection"></footer>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Blossom Salads</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="templates.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const script = document.createElement("script");
+        script.src = "script.js"; // Path to your script file
+        document.body.appendChild(script);
+
+        const templateContainer = document.getElementById("navHeader");
+        templateContainer.innerHTML = headerTemplate;
+
+        const footerContainer = document.getElementById("footerSection");
+        footerContainer.innerHTML = footerTemplate;
+      });
+    </script>
+  </head>
+
+  <body>
+    <header id="navHeader"></header>
+    <main>
+      <div>
+        <h1>Wisdom</h1>
+        <h3>What is wisdom</h3>
+        <span>
+          how can I gain wisdom. ? Is worship my god. I read and follow my holy
+          religious books. Can I assume that would gain wisdom ? Every
+          Individual is different, everyone has their own journey and path way.
+          Getting knowledge from one specific religion or sector will not be
+          sufficient. Worshipping Christ, Krishna or Allah and reading those
+          holy books and following alone will not gain wisdom. One should have
+          principles of his own after understanding the good, bad, nature of
+          life and whatever comes in his way, should be determined in following
+          it. The determination comes from mind, and if one is capable of
+          controlling the mind and not controlled by mind, should be able to
+          follow the paths of renowned saints or even creates his own foot path.
+        </span>
+        Journey of Life:
+      </div>
+    </main>
+
+    <footer id="footerSection"></footer>
+  </body>
+</html>
